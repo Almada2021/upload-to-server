@@ -13,7 +13,7 @@ upload
     no --> send(send a error);
     allow --> google[[google upload in his database]];
     google --> request[send a success response];
-    request --> esc([end])
+    request --> esc([end]);
     
 ```
 ## why this code is a good idea ?
@@ -24,8 +24,8 @@ In this example I use express file-upload in this example the server manage all 
 ```mermaid
   flowchart TD;
   client([client]) --> server[server];
-  server --> error[[try catch to manage errors]]
-  error --> response([send response])
+  server --> error[[try catch to manage errors]];
+  error --> response([send response]);
 ```
 ## Explanation
   ### modules you need
